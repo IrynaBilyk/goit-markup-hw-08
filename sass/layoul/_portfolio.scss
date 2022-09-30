@@ -1,0 +1,125 @@
+
+.portfolio-list{
+    display: flex;
+     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+        column-gap: 8px;
+        margin-bottom: 50px;     
+}
+
+.section-btn{
+    background-color:var(--secondary-background-color);
+    color:var(--primery-text-color); 
+    font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.63;
+text-align: center;
+letter-spacing: 0.03em;
+padding: 6px 22px;
+border: none;
+border-radius: 4px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus{
+    background-color:var(--accent-color);
+    color:var(--logo-light-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+}
+
+
+
+.portfolio-examples{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-examples-list{
+    flex-basis: calc((100% - 60px) / 3); 
+}
+
+.portfolio-link{
+    display: block;
+    background-color: var(--logo-light-color);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+&:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+}
+
+
+.portfolio-tytle{
+    color:var(--secondary-text-color);
+    font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+}
+
+.portfolio-page{
+    color: var(--primery-text-color);
+    font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+
+.portfolio-page-title{
+    display: block;
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
+.section-team{
+    background-color:var(--secondary-background-color);
+}
+
+.span-prf{
+ font-family: 'Roboto', sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;   
+}
+
+
+.portfolio-overlay{
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-thumb{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ transform: translateY(100%);
+
+ .portfolio-link:hover &{
+transform: translateY(0%);    
+}
+}
+
+
+.thumb-text{
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.03em;
+color: #ffffff;
+padding: 63px 24px;
+}
