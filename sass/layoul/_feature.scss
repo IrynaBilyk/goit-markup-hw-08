@@ -1,3 +1,108 @@
+@media screen and (max-width: 767px) {
+ .container {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.features__list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
+height: 226px;
+}
+
+.features__picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.features__icon {
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+  }
+
+  .features__title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: #212121;
+  }
+
+ .features__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+.container {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+.features__list{
+   display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+ .features__item {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .features__picture{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  .features__icon {
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+  }
+
+  .features__title {
+    margin-bottom: 10px;
+    color: #212121;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    text-transform: uppercase;
+  }
+
+  .features__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.3;
+  }
+}
+
+
+
+@media screen and (min-width: 1200px) {
 .features__list{
     display: flex;
     flex-wrap: wrap;
@@ -39,4 +144,5 @@ margin-bottom: 20px;
     background: #F5F4FA;
 border-radius: 4px;
 margin-bottom: 30px;
+}
 }
