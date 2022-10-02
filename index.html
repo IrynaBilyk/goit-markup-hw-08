@@ -170,32 +170,45 @@
                 <ul class="list examples__list">
                     <li class="examples__item">
                         <div class="examples__thumb">
-                            <img src="./images/box1.jpg" alt="Робочий стіл з клавіатурою і екраном" width="370">
+                            <img srcset="./images/works1-pc.jpg, ./images/works1-pc@2x.jpg" src="./images/works1-pc.jpg"
+                                alt="Робочий стіл з клавіатурою і екраном" width="370">
                             <p class="examples__title">Десктопні додатки</p>
                         </div>
                     </li>
                     <li class="examples__item">
                         <div class="examples__thumb">
-                            <img src="./images/box2.jpg" alt="Смартфон в руці на фоні екрану зі смартфонами"
-                                width="370">
+                            <img srcset="./images/works2-pc.jpg, ./images/works2-pc@2x.jpg" src="./images/works2-pc.jpg"
+                                alt="Смартфон в руці на фоні екрану зі смартфонами" width="370">
                             <p class="examples__title">Мобільні додатки</p>
                         </div>
                     </li>
                     <li class="examples__item">
                         <div class="examples__thumb">
-                            <img src="./images/box3.jpg" alt="Екран з різнокольоровим шестикутником" width="370">
+                            <img srcset="./images/works3-pc.jpg, ./images/works3-pc@2x.jpg" src="./images/works3-pc.jpg"
+                                alt="Екран з різнокольоровим шестикутником" width="370">
                             <p class="examples__title">Дизайнерські рішення</p>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-        <!-- <section class="section team">
+        <section class="section team">
             <div class="container">
                 <h2 class="team__heading">Наша команда</h2>
                 <ul class="list team__emploee">
                     <li class="team__item">
-                        <img src="./images/teammate1.jpg" alt="Усміхнений чоловік з бородою в окулярах" width="270">
+
+                        <picture>
+                            <source srcset="./images/team1-pc.jpg 1x, ./images/team1-pc@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/team1-tab.jpg 1x, ./images/team1-tab@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/team1-mob.jpg 1x, ./images/team1-mob@2x.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/team1-mob.jpg" alt="Усміхнений чоловік з бородою в окулярах" />
+                        </picture>
+
+
                         <div class="team__content">
                             <h3 class="team__member">Ігор Дем'яненко</h3>
                             <p class="team__text" lang="en">Product Designer</p>
@@ -241,7 +254,17 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/teammate2.jpg" alt="Усміхнена жінка з білим волоссям в окулярах" width="270">
+
+                        <picture>
+                            <source srcset="./images/team2-pc.jpg 1x, ./images/team2-pc@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/team2-tab.jpg 1x, ./images/team2-tab@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/team2-mob.jpg 1x, ./images/team2-mob@2x.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/team2-mob.jpg" alt="Усміхнена жінка з білим волоссям в окулярах" />
+                        </picture>
+
                         <div class="team__content">
                             <h3 class="team__member">Ольга Рєпіна</h3>
                             <p class="team__text" lang="en">Frontend Developer</p>
@@ -286,7 +309,17 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/teammate3.jpg" alt="Усміхнений чоловік в білій сорочці" width="270">
+
+                        <picture>
+                            <source srcset="./images/team3-pc.jpg 1x, ./images/team3-pc@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/team3-tab.jpg 1x, ./images/team3-tab@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/team3-mob.jpg 1x, ./images/team3-mob@2x.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/team3-mob.jpg" alt="Усміхнений чоловік в білій сорочці" />
+                        </picture>
+
                         <div class="team__content">
                             <h3 class="team__member">Микола Тарасов</h3>
                             <p class="team__text" lang="en">Marketing</p>
@@ -331,7 +364,17 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/teammate4.jpg" alt="Чоловік в окулярах" width="270">
+
+                        <picture>
+                            <source srcset="./images/team4-pc.jpg 1x, ./images/team4-pc@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/team4-tab.jpg 1x, ./images/team4-tab@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/team4-mob.jpg 1x, ./images/team4-mob@2x.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/team4-mob.jpg" alt="Чоловік в окулярах" />
+                        </picture>
+
                         <div class="team__content">
                             <h3 class="team__member">Михайло Єрмаков</h3>
                             <p class="team__text" lang="en">UI Designer</p>
@@ -377,9 +420,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="section clients">
+        <section class="section clients">
             <div class="container">
                 <h2 class="clients__heading">Постійні клієнти</h2>
                 <ul class="clients__list list">
@@ -430,7 +473,7 @@
 
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <!-- <footer class="page-footer">
         <div class="container page-footer__container">
