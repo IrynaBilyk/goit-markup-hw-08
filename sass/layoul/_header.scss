@@ -30,6 +30,13 @@
 
 
 @media screen and (min-width: 768px){
+.open-menu-button {
+    display: none;
+  }
+  .open-menu-button__icon {
+    display: none;
+  }
+
 .page-header{
 border-bottom: 1px solid #ECECEC;
 }
