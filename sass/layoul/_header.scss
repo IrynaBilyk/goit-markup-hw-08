@@ -3,6 +3,13 @@
         display: none;
     }
 
+
+.mobile-menu.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
     .page-header{
     padding-top: 16px;
     padding-bottom: 16px;

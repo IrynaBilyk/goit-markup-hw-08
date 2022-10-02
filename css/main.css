@@ -141,6 +141,11 @@ body {
   .menu {
     display: none;
   }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
   .page-header {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -1596,6 +1601,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .mobile-menu.is-open .menu {
+    display: block;
+  }
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -1626,6 +1634,10 @@ body {
     border: 0;
     padding: 0;
     line-height: 0;
+    cursor: pointer;
+  }
+  .mobile-menu__close-btn:hover, .mobile-menu__close-btn:focus {
+    color: var(--accent-color);
   }
   .mobile-menu__close-icon {
     width: 40px;
@@ -1636,18 +1648,20 @@ body {
   .mobile-menu__close-icon:hover, .mobile-menu__close-icon:focus {
     fill: var(--accent-color);
   }
-  .mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+  .mobile-nav__link {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 32px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
   }
-}
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-  .open-menu-button {
-    display: none;
+  .mobile-nav__link_current {
+    color: var(--accent-color);
   }
   .mobile-nav-contacts {
     margin-top: auto;
@@ -1675,6 +1689,37 @@ body {
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: #757575;
+  }
+  .mobile-nav-social {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 48px;
+    gap: 20px;
+  }
+  .mobile-nav-social__link {
+    color: var(--accent-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+  .mobile-nav-social__item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+  .mobile-nav__social_item:not(:first-child) {
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .open-menu-button {
+    display: none;
   }
 }
 .backdrop {
