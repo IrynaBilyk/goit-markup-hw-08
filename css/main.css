@@ -534,6 +534,7 @@ body {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.3;
+    color: var(--secondary-text-color);
   }
 }
 @media screen and (min-width: 768px) {
@@ -579,6 +580,7 @@ body {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.3;
+    color: var(--secondary-text-color);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2387,6 +2389,15 @@ body {
   .modal-form-check {
     position: absolute;
     appearance: none;
+  }
+  .modal-text-agreement {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
   }
   .modal-text-agreement-link {
     font-weight: 400;
